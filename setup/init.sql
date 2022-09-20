@@ -1,3 +1,4 @@
+DROP DATABASE debezium;
 CREATE DATABASE debezium;
 use debezium;
 
@@ -8,6 +9,6 @@ CREATE TABLE ad_clicks(
     click_time timestamp NOT NULL,
     device int(11) NOT NULL,
     channel int(11) NOT NULL,
-    attributed_time timestamp
+    attributed_time timestamp,
     is_attributed int(1)
 )
