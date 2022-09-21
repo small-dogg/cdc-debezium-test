@@ -21,6 +21,9 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.kafka:spring-kafka'
+	implementation 'io.debezium:debezium-api:1.9.5.Final'
+	implementation 'io.debezium:debezium-connector-mysql:1.9.5.Final'
+	implementation 'io.debezium:debezium-embedded:1.9.5.Final'
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
 	annotationProcessor 'org.projectlombok:lombok'
